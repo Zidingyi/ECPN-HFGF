@@ -15,7 +15,7 @@ def parse_args():
     parser = argparse.ArgumentParser()
     parser.add_argument('-i', '--input_file', default="./data/example.fasta")
     parser.add_argument('-o', '--output_dir', default="./result")
-    parser.add_argument('-d', '--device', type=str, default='cuda:0')
+    parser.add_argument('-d', '--device', type=str, default='cpu')
     parser.add_argument('-t', '--threshold', type=float, default=0.5)
     return parser.parse_args()
 
